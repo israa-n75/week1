@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        .nav  {
+            position: sticky;
+            top: 0;
+            background-color: black;
+        }
+         .nav a{
+            display: inline-block;
+            margin: 0 15px;
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        
+       
+        .block{
+            display: block;
+            width: 200px;
+            padding: 20px;
+            margin: 10px auto;
+            border: 2px solid black;
+        }
+         .inline-block{
+            display:inline-block;
+            width: 100px;
+            height: 50px;
+            padding:10px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+        .inline{
+            display: inline;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .hide{
+            display: none;
+        }
+        .flex-container{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+       .flex-container div{
+        width: 80px;
+        padding: 20px;
+        border: 2px solid black;
+       }
+       .grid-container{
+        display: grid;
+        grid-template-columns: 100px 100px;
+        gap: 20px;
+        justify-content: center;
+
+       }
+       .grid-container div{
+        padding: 20px;
+        border: 2px solid black;
+       }
+       .card{
+        position: relative;
+        width: 300px;
+        height: 150px;
+        margin: 30px auto;
+        padding: 20px;
+        border: 2px solid black;
+    }
+    .badge{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 10px;
+        background-color: yellow;
+        z-index: 1;
+
+    }
+    .floatting-button{
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        font-size: 25px;
+    }
+    .space{
+        height: 100 0px;
+        padding: 50px;
+    }
+    </style>
+        
+    
+        
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
+    </nav>
+    <h1>Display and Position Practice</h1>
+    <section>
+        <h2>Block</h2>
+        <div class="block">Block 1</div>
+        <div class="block">Block 2</div>
+    </section>
+    <section>
+        <h2>Inline block</h2>
+        <div class="inline-block">One</div>
+        <div class="inline-block">Two</div>
+        <div class="inline-block">Three</div>
+    </section>
+    <section>
+        <h2>Inline</h2>
+        <span class="inline">One</span>
+        <span class="inline">Two</span>
+        <span class="inline">Three</span>
+    </section>
+    <section>
+        <h2>Disply None</h2>
+        <p class="hide">You should not to be see me!</p>
+        <p>you should see me. </p>
+    </section>
+    <section>
+        <h2>Flex</h2>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </section>
+    <section>
+        <h2>Grid</h2>
+        <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        </div>
+    </section>
+
+
+    </section>
+    <section>
+        <h2>Relative+Container</h2>
+        <div class="card">
+            <h3>My Card</h3>
+            <p>This is a card.</p>
+            <span class="badge">NEW </span>
+
+        </div>
+    </section>
+    <button class="floatting-button">+</button>
+    <div class="space">
+        Scroll down to test sticky navbar.
+    </div>
+ 
+    
+</body>
+</html>

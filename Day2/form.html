@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+</head>
+
+<body>
+    <h1>HTML Forms</h1>
+    <div style="background-color: rgb(255, 159, 191);">
+        <form>
+            <h2>Register Form</h2>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter Your Name" required >
+            <label for="sname">Second Name:</label>
+            <input type="text" name="sname" id="sname" placeholder="Enter your second name" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <div style="background-color: lightpink;">
+                <h3>Gender</h3>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="other">Other</label>
+            </div>
+            <div>
+                <h3>Age</h3>
+                <label for="age">Age</label>
+                <input type="number" name="Age" id="Age" min="0" max="18" required placeholder="Select your age"><br>
+                <h3>Phone number</h3>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="Phone" id="phone" minlength="10" maxlength="10"
+                    placeholder="Enter your phone number" required>
+                <h3>Date Of Birth</h3>
+                <label for="dob">Date Of Birth</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+            <div>
+                <h3>Hobbies</h3>
+                <input type="checkbox" name="game" id="football">
+                <label text="football">Football</label>
+                <input type="checkbox" name="game" id="cricket">
+                <label for="cricket">Cricket</label>
+                <input type="checkbox" name="game" id="tennis">
+                <label for="tennis">Tennis</label><br>
+                <br>
+                <label for="computer">Computer skills Level</label>
+                <input type="range" id="computer" name="computer">
+            </div>
+            <div style="background-color:lightpink;">
+                <h3>States</h3>
+                <label for="state"></label>
+                <select name="state" id="State">
+                    <option value="">Select your state</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Tamilnad">Tamilnad</option>
+                    <option value="Karnataka">Karnataka</option>
+                </select>
+            </div>
+
+            <h3>Address</h3>
+            <label for="address">Address</label><br>
+            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+            <h3>Course</h3>
+            <label for="course">Course</label>
+            <select name="course" id="course">
+                <option value="">Select your course</option>
+                <option value="full stack">Full stack</option>
+                <option value="cyber security">Cyber Security</option>
+                <option value="bca">BCA</option>
+            </select>
+
+
+
+            <h3>Qualification</h3>
+            <label for="qualification">Qualification</label>
+            <input type="text" name="qualification" id="qualification" placeholder="Enter qualification">
+            <h3>Upload Photo</h3>
+            <label for="photo">Upload photo</label>
+            <input type="file" name="photo" id="photo">
+            <br><br>
+            <input type="submit" value="Register">
+            
+        </form action="#">
+
+
+
+
+
+</body>
+
+</html>
